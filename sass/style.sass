@@ -1,0 +1,118 @@
+@import './_colors'
+
+
+
+body
+	margin: 0
+	background-color: $GREEN_1
+
+*
+	font-family: 'Poppins', sans-serif
+
+.welcome
+	padding: 10px
+	box-sizing: border-box
+	display: flex
+	width: 100%
+	height: 100vh
+	&__left
+		width: 50%
+		height: 100%
+		background-image: url('/img/background.jpg')
+		background-size: cover
+		overflow: hidden
+	&__su
+		position: relative
+		margin: 0
+		line-height: 0
+		top: 40%
+		font-weight: 700
+		font-size: 150px
+		text-transform: uppercase
+		text-shadow: 0px 0px 30px rgba(99, 122, 48, 0.5)
+		transform: rotate(-90deg)
+		&-l
+			left: 50%
+			color: $WHITE
+		&-r
+			right: 50%
+			color: $GREEN_1
+	&__right
+		width: 50%
+		height: 100%
+		background-color: $GRAY_2
+		overflow: hidden
+		&-contant
+			padding: 150px 0
+			box-sizing: border-box
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+	&__h1
+		margin: 0
+		margin-bottom: 40px
+		font-weight: 800
+		font-size: 40px
+		color: $GREEN_1
+	&__form
+		width: 500px
+		display: flex
+		flex-direction: column
+		input
+			height: 55px
+			margin-bottom: 10px
+			padding: 18px
+			box-sizing: border-box
+			border: none
+			border-radius: 5px
+			background: $GREEN_3
+			transition: all 0.1s
+			&::placeholder
+				font-weight: 300
+				font-size: 10px
+				opacity: 0.7
+			&:focus 
+				box-sizing: border-box
+				outline: 2px solid $GREEN_1
+				background: none
+		&-input-name
+			width: 100%
+			display: flex
+			justify-content: space-between
+			input
+				width: 245px
+		&-buttons
+			width: 100%
+			margin-top: 30px
+			margin-bottom: 30px
+			display: flex
+			justify-content: space-between
+			button
+				width: 245px
+				height: 45px
+				border: none
+				border-radius: 5px
+				background-color: $GRAY_1
+				color: $BLACK
+				font-size: 14px
+				font-weight: 400
+				transition: all 0.5s
+				&:hover
+					background-color: $GREEN_3
+					color: $GREEN_1
+				&:nth-child(2)
+					background-color: $GREEN_1
+					color: $WHITE
+					font-weight: 600
+					&:hover
+						background-color: $GREEN_2
+		p
+			text-align: center
+			opacity: 0.6 
+			a
+				text-decoration: none
+				color: $GREEN_1
+				transition: all 0.5s
+				&:hover
+					color: $GREEN_2
